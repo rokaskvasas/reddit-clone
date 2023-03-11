@@ -1,12 +1,11 @@
 import { Flex, Icon } from "@chakra-ui/react";
+import { BsArrowUpRightCircle, BsChatDots } from "react-icons/bs";
 import {
-  BsArrowUpRightCircle,
-  BsChatDots,
-  GrAdd,
   IoFilterCircleOutline,
-  IoNotificationsCircleOutline,
+  IoNotificationsOutline,
   IoVideocamOutline,
-} from "react-icons/all";
+} from "react-icons/io5";
+import { GrAdd } from "react-icons/gr";
 
 const Icons: React.FC = () => {
   return (
@@ -57,7 +56,7 @@ const Icons: React.FC = () => {
           borderRadius={4}
           _hover={{ bg: "gray.200" }}
         >
-          <Icon as={IoNotificationsCircleOutline} fontSize={20} />
+          <Icon as={IoNotificationsOutline} fontSize={20} />
         </Flex>
         <Flex
           display={{ base: "none", md: "flex" }}
