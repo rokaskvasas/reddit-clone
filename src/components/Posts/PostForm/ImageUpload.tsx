@@ -17,7 +17,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
   const selectedFileRef = useRef<HTMLInputElement>(null);
 
   return (
-    <Flex justify="center" align="center" width="100%">
+    <Flex direction="column" justify="center" align="center" width="100%">
       {selectedFile ? (
         <>
           <Image src={selectedFile} maxWidth="400px" maxHeight="400px" />
