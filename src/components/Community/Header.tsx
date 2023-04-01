@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
                 {communityData.id}
               </Text>
               <Text fontWeight={600} fontSize="10pt" color="gray.400">
-                /r{communityData.id}
+                /r/{communityData.id}
               </Text>
             </Flex>
             <Button
