@@ -35,7 +35,7 @@ const CommentItem: React.FC<CommentItemProps> = ({
   return (
     <Flex>
       <Box>
-        <Icon as={FaReddit} fontSize={30} color="gray.300" />
+        <Icon as={FaReddit} fontSize={30} color="gray.300" mr={2} />
       </Box>
       <Stack spacing={1}>
         <Stack direction="row" align="center" fontSize="8pt">
