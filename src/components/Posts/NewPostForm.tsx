@@ -31,6 +31,7 @@ import useSelectFile from "@/hooks/useSelectFile";
 
 type NewPostFromProps = {
   user: User;
+  communityImageURL?: string;
 };
 
 const formTabs: TabItem[] = [
@@ -60,7 +61,10 @@ export type TabItem = {
   title: string;
   icon: typeof Icon.arguments;
 };
-const NewPostForm: React.FC<NewPostFromProps> = ({ user }) => {
+const NewPostForm: React.FC<NewPostFromProps> = ({
+  user,
+  communityImageURL,
+}) => {
   const router = useRouter();
   const [selectedTab, setSelectedTab] = useState(formTabs[0].title);
   const [textInputs, setTextInputs] = useState({
@@ -83,6 +87,7 @@ const NewPostForm: React.FC<NewPostFromProps> = ({ user }) => {
     const { communityId } = router.query;
     const newPost: Post = {
       communityId: communityId as string,
+      communityImageURL: communityImageURL || "",
       creatorId: user.uid,
       creatorDisplayName: user.email!.split("@")[0],
       title: textInputs.title,
