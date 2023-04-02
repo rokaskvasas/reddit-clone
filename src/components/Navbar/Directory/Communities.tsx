@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { FaReddit } from "react-icons/fa";
 import { GrAdd } from "react-icons/gr";
 import { useRecoilValue } from "recoil";
-import MenuListItem from "./MenuListitem";
+import MenuListItem from "./MenuListItem";
 type CommunitiesProp = {};
 
 const Communities: React.FC<CommunitiesProp> = () => {
@@ -54,7 +54,7 @@ const Communities: React.FC<CommunitiesProp> = () => {
             key={snippet.communityId}
             icon={FaReddit}
             displayText={`r/${snippet.communityId}`}
-            link={`r/${snippet.communityId}`}
+            link={`${snippet.communityId}`}
             iconColor="blue.500"
             imageURL={snippet.imageURL}
           />
