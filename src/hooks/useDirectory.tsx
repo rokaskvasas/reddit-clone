@@ -43,7 +43,7 @@ const useDirectory = () => {
         ...prev,
         selectedMenuItem: {
           displayText: `r/${currentCommunity.id}`,
-          link: `/r/${currentCommunity.id}`,
+          link: `r/${currentCommunity.id}`,
           imageURL: currentCommunity.imageURL,
           icon: FaReddit,
           iconColor: "blue.500",
